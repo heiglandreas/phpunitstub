@@ -40,3 +40,16 @@ hooks. All these would require further modifications to the PHPUnit-Code.
 Apart from getting the current features (setup/teardown, DataProvider, Hooks) into the PoC, a further possible
 extension would be to modify the whole setup so that `getTestMethods` would not return methods but Closures that
 are then used as Test-methods.
+
+## Test it
+
+You can test this PoC by checking out the code, installing the dependencies and then run the "testsuite"
+
+```bash
+git clone https://github.com/heiglandreas/phpunitstub.git
+composer install
+./vendor/bin/phpunit
+```
+
+It uses [a forked branch](https://github.com/sebastianbergmann/phpunit/compare/master...heiglandreas:pocTestCaseLessUnitTest)
+of PHPUnit that has some modifications to make the PoC work.
