@@ -41,7 +41,7 @@ trait UnitTester
     public function run(TestResult $result = null) : TestResult
     {
         $this->testRunner->setTestClass($this);
-        $result->rcun($this->testRunner);
+        $result->run($this->testRunner);
 
         return $result;
     }
